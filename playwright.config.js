@@ -10,14 +10,10 @@ export default defineConfig({
   reporter: 'html',
 
   use: {
-    timeout: 90_000, // Increase test timeout to 90 seconds
-    navigationTimeout: 60_000, // Increase navigation timeout
-    actionTimeout: 60_000, // Increase action timeout
     baseURL: 'https://www.magpiefi.xyz/',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     headless: false,
-    slowMo: 50,
   },
 
   projects: [
