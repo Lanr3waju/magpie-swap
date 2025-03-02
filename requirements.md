@@ -113,15 +113,3 @@ npx playwright test --debug
 
 For continuous testing in a **CI/CD pipeline**, integrate with **GitHub Actions** or **Jenkins**.
 Example GitHub Actions workflow can be found in the [`README.md`](README.md).
-
-## 7. Test Data Management
-
-- No **external test data files** are needed
-- Tokens for swaps are **hardcoded** in test cases
-- Wallet connection scenarios will use **mocked data** in future improvements
-
-## 8. Future Enhancements
-
-📌 **Mock MetaMask Connection** for headless testing
-📌 Implement **API Testing** for blockchain transactions
-📌 Add **Cross-Browser Testing** (Chrome, Firefox, Safari)

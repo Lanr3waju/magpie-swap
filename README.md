@@ -1,4 +1,4 @@
-# MagpieFi Swap App - Test Automation
+# MagpieFi Swap App - Test Automation Demo
 
 ## Overview
 
