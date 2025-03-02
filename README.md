@@ -9,8 +9,8 @@ This repository contains end-to-end test automation for the MagpieFi Swap App us
 1. Clone the repository:
 
 ```sh
-   git clone https://github.com/your-repo/magpiefi-tests.git
-   cd magpiefi-tests
+   git clone https://github.com/Lanr3waju/magpie-swap.git
+   cd magpie-swap
 ```
 
 ### Install dependencies
