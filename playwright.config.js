@@ -13,7 +13,7 @@ export default defineConfig({
     baseURL: 'https://www.magpiefi.xyz/',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
-    headless: false,
+    headless: true,
   },
 
   projects: [
