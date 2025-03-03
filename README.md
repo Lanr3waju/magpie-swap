@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains end-to-end test automation for the MagpieFi Swap App using **Playwright**.
+This repository contains demo test automation for the MagpieFi Website & App using **Playwright**.
 
 ## Setup Instructions
 
