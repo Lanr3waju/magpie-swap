@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test'
 
 test('Magpie Landing Page UI & Navigation Test', async ({ page, context }) => {
-    // Visit Magpie homepage
     await page.goto('/')
 
     // Hover over the dropdown menu to reveal options
