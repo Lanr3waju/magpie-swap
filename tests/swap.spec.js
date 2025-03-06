@@ -3,8 +3,6 @@ import { test, expect } from '@playwright/test'
 test.describe('MagpieFi Swap Page', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
-    // Click on 'Swap Now' button
-    await page.getByRole('link', { name: 'Swap Now' }).click()
     // Handle first-time user modal
     await page.getByRole('button', { name: 'No thanks, skip it' }).click()
 
