@@ -10,7 +10,7 @@ This document outlines the requirements for the end-to-end test automation of Ma
 
 - **Operating System:** Windows, macOS, or Linux
 - **Node.js Version:** `>=16.0.0`
-- **Browser Support:** Chromium, Firefox, WebKit
+- **Browser Support:** Chromium
 
 ### 2.2. Dependencies
 
