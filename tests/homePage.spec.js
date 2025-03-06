@@ -45,7 +45,7 @@ test.describe('Magpie Landing Page UI & Navigation Test', () => {
         await dropdown.hover()
     })
 
-    test.only('Verify main page headings are present', async ({ page }) => {
+    test('Verify main page headings are present', async ({ page }) => {
         const headings = [
             'Beyond bridges & between',
             'Execute optimal swaps, on or',
