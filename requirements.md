@@ -54,7 +54,7 @@ The test suite should cover the following functionalities:
 ### 3.4. Navigation & UI Tests
 
 - ✅ Verify **dropdown menu** visibility
-- ✅ Ensure correct **redirections for links that open in a new tab**
+- ✅ Ensure correct **redirection for links that open in a new tab**
 - ✅ Validate **main page headings**
 - ✅ Check **footer links for visibility**
 - ✅ Ensure navigation between **Home, Features, and About** pages
