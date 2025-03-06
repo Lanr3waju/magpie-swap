@@ -2,8 +2,7 @@ import { test, expect } from '@playwright/test'
 
 test.describe('MagpieFi Boost Feature', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/')
-        await page.getByRole('link', { name: 'Swap Now' }).click()
+        await page.goto('https://app.magpiefi.xyz/swap')
         await page.getByRole('button', { name: 'No thanks, skip it' }).click()
         await page.getByRole('link', { name: 'Boost' }).click()
     })

@@ -11,7 +11,7 @@ test('Contact Support Form Verification on Swap Page', async ({ page }) => {
 
     // Check the visibility of the elements and interactivity of the form
     await supportFrame.getByRole('textbox', { name: 'Your name (optional)' }).fill('Lanre')
-    await supportFrame.getByRole('textbox', { name: 'Email address' }).fill('lanre@magpie.com')
+    await supportFrame.getByRole('textbox', { name: 'Email address' }).fill('lanre@magpie')
     await supportFrame.getByText('Wallet (optional)').fill('0xas42435363773737377bc')
     await supportFrame.getByText('Transaction Hash', { exact: true }).fill('0xas42435363773737377bc')
     await supportFrame.getByText('Proposal category').click()
@@ -27,7 +27,9 @@ test('Contact Support Form Verification on Swap Page', async ({ page }) => {
 
     // Verify the 'OK' button is visible and click it
     await supportFrame.getByTestId('button-ok').click()
-    // Verify the form did not submit as the How can we help you? field is a required field and is filled with a white space
+    // Verify an error message is displayed for the invalid email address
+    await expect(supportFrame.getByText('Enter a valid email address')).toBeVisible()
+    // Verify the error message for the required field
     await expect(supportFrame.getByText('Enter a value')).toBeVisible()
     // Minimize the Contact Support widget
     await supportFrame.getByRole('button', { name: 'Minimize widget' }).click()

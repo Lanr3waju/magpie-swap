@@ -22,8 +22,6 @@ test.describe('MagpieFi Swap Page', () => {
     // Select token for swapping
     await page.getByRole('button', { name: 'scUSD Sonic 0xd3dc...97ae' }).click()
     await page.getByText('S', { exact: true }).click()
-    await page.getByRole('button', { name: 'USDT Sonic 0x6047...eaf9' }).click()
-    await page.getByText('wS').nth(0).click()
 
     // Enter amount
     await page.getByPlaceholder('0.00').first().fill('5')

@@ -6,7 +6,7 @@ test.describe('Magpie Landing Page UI & Navigation Test', () => {
         await page.goto('/')
     })
 
-    test('Check if links in the dropdown menu open the correct pages', async ({ page }) => {
+    test('Check if links in the dropdown menu open the correct pages', async ({ page, context }) => {
         // Hover over the dropdown menu to reveal options
         const dropdown = page.locator('#w-dropdown-toggle-0')
         await dropdown.hover()
@@ -17,7 +17,7 @@ test.describe('Magpie Landing Page UI & Navigation Test', () => {
                 context.waitForEvent('page'),  // Wait for a new tab to open
                 linkLocator.click()            // Click the link
             ])
-            await newPage.waitForLoadState()   // Ensure the new page loads
+            // await newPage.waitForLoadState()   // Ensure the new page loads
 
             // If the page has an onboarding step, bypass it
             if (onboardingBypass) {
