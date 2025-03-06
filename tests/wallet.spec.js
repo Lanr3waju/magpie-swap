@@ -30,6 +30,6 @@ test.describe('Wallet Connection on MagpieFi', () => {
         await expect(page.getByRole('button', { name: 'Coinbase Wallet' })).toBeVisible()
         await expect(page.getByRole('button', { name: 'Rabby' })).toBeVisible()
         await expect(page.getByRole('button', { name: 'OKX' })).toBeVisible()
-        await expect(page.getByRole('button', { name: 'Binance Web3' })).toBeVisible()
+        await expect(page.getByRole('button', { name: 'Binance Wallet' })).toBeVisible()
     })
 })
